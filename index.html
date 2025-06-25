@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedEx Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2><span>Med</span>Ex</h2>
+      <nav>
+        <ul>
+          <li class="active">Dashboard</li>
+          <li>Schedule</li>
+          <li>Reliable Doctor</li>
+          <li>Patients</li>
+          <li>Activity</li>
+          <li>Support</li>
+        </ul>
+      </nav>
+      <div class="bottom-links">
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header>
+        <input type="text" placeholder="Search Schedule..." />
+        <img src="https://i.pravatar.cc/40" class="profile-pic" alt="Profile" />
+      </header>
+
+      <!-- Overview Cards -->
+      <section class="overview">
+        <div class="card doctors">
+          <h3>Total Doctors</h3>
+          <p>152</p>
+        </div>
+        <div class="card patients">
+          <h3>Total Patients</h3>
+          <p>1145</p>
+        </div>
+        <div class="card schedule">
+          <h3>Schedule</h3>
+          <p>102</p>
+        </div>
+        <div class="card beds">
+          <h3>Beds Available</h3>
+          <p>15</p>
+        </div>
+      </section>
+
+      <!-- Doctor List with Images -->
+      <section class="doctors-list">
+        <h3>Doctors</h3>
+        <div class="doctor-cards">
+          <div class="doctor">
+            <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Doctor">
+            <span>Free</span>
+          </div>
+          <div class="doctor">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Doctor">
+            <span>Scheduled</span>
+          </div>
+          <div class="doctor">
+            <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Doctor">
+            <span>Scheduled</span>
+          </div>
+          <div class="doctor">
+            <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Doctor">
+            <span>Free</span>
+          </div>
+          <div class="doctor">
+            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Doctor">
+            <span>Scheduled</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Patients Table -->
+      <section class="recent-patients">
+        <h3>Recent Patients</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date in</th>
+              <th>Gender</th>
+              <th>Age</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Cameron Williamson</td><td>30/07/2022</td><td>Male</td><td>61kg</td><td class="pending">Pending</td></tr>
+            <tr><td>George Washington</td><td>30/07/2022</td><td>Male</td><td>54kg</td><td class="confirmed">Confirmed</td></tr>
+            <tr><td>John Adams</td><td>29/07/2022</td><td>Male</td><td>56kg</td><td class="confirmed">Confirmed</td></tr>
+            <tr><td>Thomas Jefferson</td><td>29/07/2022</td><td>Male</td><td>11kg</td><td class="rejected">Rejected</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
